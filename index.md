@@ -1,8 +1,8 @@
-## Welcome to GitHub Pages
+## Identify Me if You Can
 
-You can use the [editor on GitHub](https://github.com/dlihhats/identifyme/edit/master/index.md) to maintain and preview the content for your website in Markdown files.
+In this project, we're going to look at the problem of user identification by their behaviour in the Internet. In particular, we're planning to analyze websites sequences from sessions belonging to various people.
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+The data comes from an article [A Tool for Classification of Sequential Data](http://ceur-ws.org/Vol-1703/paper12.pdf) but the approach to classification will be different.
 
 ### Markdown
 
