@@ -1,8 +1,10 @@
 ## Identify Me if You Can
 
-In this project, we're going to look at the problem of user identification by their behaviour in the Internet. In particular, we're planning to analyze websites sequences from sessions belonging to various people.
+In this project, we're going to look at the problem of user identification by their behaviour on the Internet. In particular, we're planning to analyse websites sequences from sessions belonging to various people. Similar problems are being solved in Google Analytics and described in articles on the topics of ["Traversal Pattern Mining"](https://scholar.google.co.uk/scholar?q=traversal+pattern+mining) and ["Sequential Pattern Mining"](https://scholar.google.co.uk/scholar?q=sequential+pattern+mining).
 
-The data comes from an article [A Tool for Classification of Sequential Data](http://ceur-ws.org/Vol-1703/paper12.pdf) but the approach to classification will be different.
+We used the data from an article [A Tool for Classification of Sequential Data](http://ceur-ws.org/Vol-1703/paper12.pdf), but the approach to classification will be different.
+
+The data comes from proxy-servers of the Blaise Pascal University and represents user ID, timestamp, and a visited URL.
 
 ### Markdown
 
