@@ -4,7 +4,7 @@ We used the data from an article [A Tool for Classification of Sequential Data](
 
 The data comes from proxy-servers of the Blaise Pascal University and represents user ID, timestamp, and a visited URL.
 
-## Data Visualisation
+### Data Visualisation
 Let's check an assumption that our users browse the Internet in different times of the day throughout the week.
 
 ```python
@@ -67,6 +67,7 @@ iplot(fig)
 
 
 Let's take a look at the average percentage of time spent by each user on Facebook, Youtube and Top30 websites within a session.
+
 ```python
 trace1 = go.Bar(
     x=sorted(id_name_dict.values()),
