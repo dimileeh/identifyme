@@ -1,7 +1,2 @@
-defaults:
-  -
-    scope:
-      path: ""
-    values:
-      title: "Identify Me if You Can"
-      theme: jekyll-theme-hacker
+theme: jekyll-theme-hacker
+title: "Identify Me if You Can"
