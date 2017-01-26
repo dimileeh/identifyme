@@ -4,6 +4,9 @@ We used the data from an article [A Tool for Classification of Sequential Data](
 
 The data comes from proxy-servers of the Blaise Pascal University and represents user ID, timestamp, and a visited URL.
 
+Let's check an assumption that our users browse the Internet in different times of the day throught the week.
+<iframe width="100%" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~dlihhats/3.embed"></iframe>
+
 
 Let's take a look at the average percentage of time spent by each user on Facebook, Youtube and Top30 websites within a session. 
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~dlihhats/1.embed"></iframe>
