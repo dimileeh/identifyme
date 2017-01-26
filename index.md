@@ -6,7 +6,7 @@ The data comes from proxy-servers of the Blaise Pascal University and represents
 
 Let's check an assumption that our users browse the Internet in different times of the day throughout the week.
 
-```
+```python
 layout = go.Layout(
     title="Percentage of all user's sessions",
     height = 1300
