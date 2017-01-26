@@ -4,7 +4,7 @@ We used the data from an article [A Tool for Classification of Sequential Data](
 
 The data comes from proxy-servers of the Blaise Pascal University and represents user ID, timestamp, and a visited URL.
 
-
+<iframe width="900" height="800" frameborder="0" scrolling="no" src="https://plot.ly/~dlihhats/1.embed"></iframe>
 
 
 
