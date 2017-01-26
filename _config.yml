@@ -1,8 +1,7 @@
-theme: jekyll-theme-hacker
-
 defaults:
   -
     scope:
       path: ""
     values:
       title: "Identify Me if You Can"
+      theme: jekyll-theme-hacker
