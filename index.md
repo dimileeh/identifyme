@@ -5,7 +5,8 @@ We used the data from an article [A Tool for Classification of Sequential Data](
 The data comes from proxy-servers of the Blaise Pascal University and represents user ID, timestamp, and a visited URL.
 
 Let's check an assumption that our users browse the Internet in different times of the day throughout the week.
-```markdown
+
+```
 layout = go.Layout(
     title="Percentage of all user's sessions",
     height = 1300
