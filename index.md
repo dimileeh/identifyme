@@ -24,8 +24,10 @@ for x, y in itertools.product(range(1, 6), range(1, 3)):
     if len(user_names):
         user_name = user_names.pop()
 
-        userdata = new_features_10users[new_features_10users.target==user_name][["day_of_week", "daytime"]].\
-                                                     groupby(["day_of_week", "daytime"]).size().reset_index()
+        userdata = new_features_10users\
+                    [new_features_10users.target==user_name]\
+                    [["day_of_week", "daytime"]].\
+                    groupby(["day_of_week", "daytime"]).size().reset_index()
         matrix = []
         totalsessions = sum(userdata[0])
         for dtime in range(0,3):
@@ -34,7 +36,8 @@ for x, y in itertools.product(range(1, 6), range(1, 3)):
                 value = userdata[(userdata.day_of_week == day) & \
                         (userdata.daytime == dtime)][0]
                 if len(value):
-                    weekrow.append(round(float(value) / totalsessions * 100, 1))
+                    weekrow.append(round(float(value) / \
+                            totalsessions * 100, 1))
                 else:
                     weekrow.append(0)
             matrix.append(weekrow)
