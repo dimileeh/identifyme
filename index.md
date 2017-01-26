@@ -12,9 +12,11 @@ layout = go.Layout(
     height = 1300
 )  
 
-fig = tools.make_subplots(rows=5, cols=2, subplot_titles=(sorted(id_name_dict.values())),  print_grid=False,\
-                         specs=[[{}, {}], [{}, {}], [{}, {}], [{}, {}], [{}, {}]], \
-                         horizontal_spacing = 0.01, vertical_spacing = 0.07)
+fig = tools.make_subplots(rows=5, cols=2, \
+    subplot_titles=(sorted(id_name_dict.values())), \
+    print_grid=False, \
+    specs=[[{}, {}], [{}, {}], [{}, {}], [{}, {}], [{}, {}]], \
+    horizontal_spacing = 0.01, vertical_spacing = 0.07)
 
 user_names = sorted(id_name_dict.values(), reverse=True)
 
@@ -29,7 +31,8 @@ for x, y in itertools.product(range(1, 6), range(1, 3)):
         for dtime in range(0,3):
             weekrow = []
             for day in range(0,7):
-                value = userdata[(userdata.day_of_week == day) & (userdata.daytime == dtime)][0]
+                value = userdata[(userdata.day_of_week == day) & \
+                        (userdata.daytime == dtime)][0]
                 if len(value):
                     weekrow.append(round(float(value) / totalsessions * 100, 1))
                 else:
