@@ -4,6 +4,7 @@ We used the data from an article [A Tool for Classification of Sequential Data](
 
 The data comes from proxy-servers of the Blaise Pascal University and represents user ID, timestamp, and a visited URL.
 
+## Data Visualisation
 Let's check an assumption that our users browse the Internet in different times of the day throughout the week.
 
 ```python
@@ -65,7 +66,44 @@ iplot(fig)
 <iframe width="100%" height="1200" frameborder="0" scrolling="no" src="https://plot.ly/~dlihhats/7.embed"></iframe>
 
 
-Let's take a look at the average percentage of time spent by each user on Facebook, Youtube and Top30 websites within a session. 
+Let's take a look at the average percentage of time spent by each user on Facebook, Youtube and Top30 websites within a session.
+```python
+trace1 = go.Bar(
+    x=sorted(id_name_dict.values()),
+    y=[round(np.mean(new_features_10users[(new_features_10users.target==user) & \
+              (new_features_10users.fb_portion > 0)]["fb_portion"]) * 100, 1) \
+                                for user in sorted(id_name_dict.values())],
+    name='Facebook'
+)
+trace2 = go.Bar(
+    x=sorted(id_name_dict.values()),
+    y=[round(np.mean(new_features_10users[(new_features_10users.target==user)& \
+              (new_features_10users.youtube_portion > 0)]["youtube_portion"]) * 100, 1) \
+                                 for user in sorted(id_name_dict.values())],
+    name='Youtube'
+)
+
+trace3 = go.Scatter(
+    x=sorted(id_name_dict.values()),
+    y=[round(np.mean(new_features_10users[(new_features_10users.target==user) & \
+              (new_features_10users.top30_portion > 0)]["top30_portion"]) * 100, 1) \
+                                 for user in sorted(id_name_dict.values())],
+    name="Top-30 Websites"
+)
+
+data = [trace1, trace2, trace3]
+layout = go.Layout(
+    title="Average % of time spent on websites within a session",
+    barmode='group',
+    yaxis=dict(
+        title='% of time in session'
+        )
+)
+
+fig = go.Figure(data=data, layout=layout)
+iplot(fig)
+```
+
 <iframe width="100%" height="400" frameborder="0" scrolling="no" src="https://plot.ly/~dlihhats/1.embed"></iframe>
 
 
