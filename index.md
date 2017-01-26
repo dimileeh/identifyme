@@ -62,7 +62,7 @@ fig['layout'].update(layout)
 iplot(fig)
 ```
 
-<iframe width="100%" height="970" frameborder="0" scrolling="no" src="https://plot.ly/~dlihhats/7.embed"></iframe>
+<iframe width="100%" height="1200" frameborder="0" scrolling="no" src="https://plot.ly/~dlihhats/7.embed"></iframe>
 
 
 Let's take a look at the average percentage of time spent by each user on Facebook, Youtube and Top30 websites within a session. 
