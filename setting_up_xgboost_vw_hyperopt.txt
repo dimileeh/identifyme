@@ -1,0 +1,166 @@
+    1  which s3cmd
+    2  which gsutil
+    3  gsutil get gs://smartnandnimble/identifyme/train_part_sparse_w5.pkl "data"
+    4  gsutil
+    5  export CLOUD_SDK_REPO="cloud-sdk-$(lsb_release -c -s)"
+    6  echo "deb http://packages.cloud.google.com/apt $CLOUD_SDK_REPO main" | sudo tee /etc/apt/sources.list.d/google-cloud-sdk.list
+    7  curl https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+    8  sudo apt-get update && sudo apt-get install google-cloud-sdk
+    9  sudo apt-get install google-cloud-sdk-app-engine-python
+   10  gcloud init
+   11  which gcloud
+   12  gcloud components list
+   13  gsutil
+   14  gcloud components install app-engine-go cloud-datastore-emulator
+   15  sudo apt-get install google-cloud-sdk-datastore-emulator
+   16  gsutil
+   17  sudo apt-get install google_compute_engine
+   18  pip install google-compute-engine
+   19  sudo pip install google-compute-engine
+   20  which pip
+   21  sudo /usr/local/bin/miniconda/bin/pip install google-compute-engine
+   22  sudo /usr/local/bin/miniconda/bin/pip install google-application-engine
+   23  sudo /usr/local/bin/miniconda/bin/pip install google-app-engine
+   24  gsutil
+   25  htop
+   26  sudo apt-get install htop
+   27  htop
+   28  which gcloud
+   29  ps aux | grep jupyter
+   30  which jupyter
+   31  sudo /usr/local/bin/miniconda/bin/jupyter notebook --no-window &
+   32  jupyter --help | less
+   33  sudo /usr/local/bin/miniconda/bin/jupyter notebook --no-browser &
+   34  disown 2386
+   35  fg
+   36  htop
+   37  exit
+   38  git clone --recursive https://github.com/dmlc/xgboost
+   39  cd xgboost/
+   40  make -j4
+   41  cd python-package; sudo python setup.py install
+   42  ls
+   43  ..
+   44  cd ..
+   45  ls
+   46  xgboost --help
+   47  vim xgboost 
+   48  ./xgboost 
+   49  sudo apt-get install python-setuptools
+   50  cd python-package/
+   51  sudo python setup.py install
+   52  cd
+   53  git clone git://github.com/JohnLangford/vowpal_wabbit.git
+   54  cd vowpal_wabbit/
+   55  make
+   56  ./autogen.sh
+   57  ls
+   58  ./autogen.sh 
+   59  cd
+   60  wget http://www.boost.org/users/history/version_1_63_0.html
+   61  ls
+   62  rm version_1_63_0.html 
+   63  wget https://sourceforge.net/projects/boost/files/boost/1.63.0/boost_1_63_0.tar.gz
+   64  ls
+   65  tar zxf boost_1_63_0.tar.gz 
+   66  ls
+   67  ls boost_1_63_0
+   68  ./bootstrap.sh
+   69  ls
+   70  cd boost_1_63_0/
+   71  ls
+   72  vim bootstrap.sh 
+   73  ..
+   74  cd ..
+   75  cd xgboost/
+   76  make
+   77  make clean
+   78  cd ..
+   79  ls
+   80  cd vowpal_wabbit/
+   81  ls
+   82  ./autogen.sh 
+   83  ./autogen.sh --help
+   84  pwd
+   85  ls ../boost_1_63_0
+   86  ./autogen.sh
+   87  diname --help
+   88  dirname --help
+   89  dirname --with-boost-libdir=../boost_1_63_0
+   90  dirname --with-boost-libdir="../boost_1_63_0"
+   91  pwd ../boost_1_63_0
+   92  ls ../boost_1_63_0
+   93  pwd
+   94  dirname --with-boost-libdir="/home/dmitri_likhachev/boost_1_63_0"
+   95  ./autogen.sh --with-boost-libdir="/home/dmitri_likhachev/boost_1_63_0"
+   96  ./autogen.sh --with-boost-libdir="/home/dmitri_likhachev/boost_1_63_0/boost"
+   97  ./autogen.sh /home/dmitri_likhachev/boost_1_63_0/boost
+   98  vim autogen.sh 
+   99  export LIBFILE="/home/dmitri_likhachev/boost_1_63_0/boost"
+  100  echo $LIBFILE
+  101  ./autogen.sh 
+  102  vim autogen.sh 
+  103  ldconfig -p
+  104  echo $LD_LIBRARY_PATH
+  105  vim ~/.bashrc
+  106  fg
+  107  source ~/.bashrc
+  108  echo $LD_LIBRARY_PATH
+  109  sudo vim /etc/ld.so.conf 
+  110  fg
+  111  sudo ldconfig
+  112  sudo ldconfig -p
+  113  ./autogen.sh 
+  114  sudo apt-get install libboost-program-options-dev
+  115  ./autogen.sh 
+  116  sudo apt-get install libtoolize
+  117  sudo apt-get install build-essential libtool
+  118  vim ~/.bashrc
+  119  sudo vim /etc/ld.so.conf 
+  120  sudo ldconfig -p
+  121  sudo ldconfig
+  122  source ~/.bashrc
+  123  ./autogen.sh 
+  124  sudo apt-get install autotools-dev
+  125  sudo apt-get aclocal
+  126  sudo apt-get install aclocal
+  127  sudo apt-get install automake
+  128  ./autogen.sh 
+  129  make
+  130  make test
+  131  make install
+  132  sudo make install
+  133  vw --help
+  134  sudo make
+  135  make clean
+  136  sudo make
+  137  make clean
+  138  apt-get install libboost-program-options-dev zlib1g-dev
+  139  sudo apt-get install libboost-program-options-dev zlib1g-dev
+  140  sudo apt-get install libboost-python-dev
+  141  sudo make
+  142  sudo make test
+  143  sudo make install
+  144  which vw
+  145  vw --help
+  146  pip install vowpalwabbit
+  147  sudo pip install vowpalwabbit
+  148  python -e "import vowpalwabbit"
+  149  python
+  150  conda install vowpalwabbit
+  151  which pip
+  152  sudo /usr/local/bin/miniconda/bin/pip install vowpalwabbit
+  153  ..
+  154  cd ..
+  155  ls
+  156  cd xgboost/
+  157  ls
+  158  sudo make clean
+  159  sudo make
+  160  sudo make install
+  161  cd python-package; sudo python setup.py install
+  162  vim ~/.bashrc 
+  163  source ~/.bashrc
+  164  python
+  165  history
+  166  history > setting_up_xgboost_vw_hyperopt.txt
